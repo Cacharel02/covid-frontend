@@ -1,0 +1,32 @@
+<div >
+    <table style="width: 700px;">
+        <thead>
+            <tr>
+                <th colspan="8">Médecins</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let doctor of doctors">
+                <td style="width: 10%;">{{doctor.id}}</td>
+                <td style="width: 70%;">{{doctor.prenom}} {{doctor.name}}</td>
+                
+                <td style="width: 20%;">
+                    <div class="d-flex">
+                    <div style="margin-right:20px; margin-left: 10px;">
+                        <button class="property-button">
+                            <mat-icon class="property-icon">create</mat-icon>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="property-button">
+                            <mat-icon class="property-icon">highlight_off</mat-icon>
+                        </button>
+                    </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table> 
+    
+    
+</div>

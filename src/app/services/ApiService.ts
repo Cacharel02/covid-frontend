@@ -6,6 +6,8 @@ import { Ville } from "../models/Ville";
 import { Reservation } from "../models/Reservation";
 import { LoginRequest } from "../models/LoginRequest";
 import { User } from "../models/User";
+import { Admin } from "../models/Admin";
+import { Doctor } from "../models/Doctor";
 
 @Injectable({
     providedIn: 'root'
@@ -35,5 +37,13 @@ export class ApiService{
 
     login(login:LoginRequest):Observable<HttpResponse<any>>{
         return this.http.post<any>(this.apiAdmin+'login', login)
+    }
+
+    getAdmin(id:number):Observable<Admin>{
+        return this.http.get<Admin>(this.apiAdmin+'centers/'+id+"/admin");
+    }
+
+    getDoctors(id:number):Observable<Doctor[]>{
+        return this.http.get<Doctor[]>(this.apiAdmin+'centers/'+id+"/doctors");
     }
 }

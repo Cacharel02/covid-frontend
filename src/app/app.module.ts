@@ -21,9 +21,11 @@ import { MenuComponent } from './menu/menu.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { AdminCentresComponent } from './admin-centres/admin-centres.component';
 import { PlanningComponent } from './planning/planning.component';
+import { CenterviewComponent } from './centerview/centerview.component'
+import { AdminViewComponent } from './admin-view/admin-view.component';
+import { AdminCenterViewComponent } from './admin-center-view/admin-center-view.component';
+import { DoctorViewComponent } from './doctor-view/doctor-view.component';
 import { ModificationPersonnelComponent } from './modification-personnel/modification-personnel.component';
-
-
 
 @NgModule({
   declarations: [
@@ -40,8 +42,11 @@ import { ModificationPersonnelComponent } from './modification-personnel/modific
     MenuComponent,
     AdminCentresComponent,
     PlanningComponent,
+    CenterviewComponent,
+    AdminViewComponent,
+    AdminCenterViewComponent,
+    DoctorViewComponent,
     ModificationPersonnelComponent
-    
     
   ],
   imports: [

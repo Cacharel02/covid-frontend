@@ -1,0 +1,37 @@
+<form (ngSubmit)="onSubmit()">
+    <table>
+        <tr>
+            <td>Nom</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" [(ngModel)] = "center.name" name="name">
+            </td>
+        </tr>
+        <tr>
+            <td>Adresse</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" [(ngModel)] = "center.adresse" name="adresse"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Code postal</td>
+            <td>Ville</td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)] = "center.code" name="code"/></td>
+            <td><input type="text" [(ngModel)] = "center.ville.name" name="ville"/></td>
+        </tr>
+        <tr>
+            <td>
+                <button class="property-button">
+                    <mat-icon class="property-icon">group</mat-icon>
+                </button>
+            </td>
+            <td><button class="btn btn-primary">Annuler</button></td>
+            <td><button class="btn btn-primary">Mettre à jour</button></td>
+        </tr>
+    </table>
+</form>
