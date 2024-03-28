@@ -21,6 +21,7 @@ import { MenuComponent } from './menu/menu.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { AdminCentresComponent } from './admin-centres/admin-centres.component';
 import { PlanningComponent } from './planning/planning.component';
+import { ModificationPersonnelComponent } from './modification-personnel/modification-personnel.component';
 
 
 
@@ -38,7 +39,9 @@ import { PlanningComponent } from './planning/planning.component';
     CentresPersonnelComponent,
     MenuComponent,
     AdminCentresComponent,
-    PlanningComponent
+    PlanningComponent,
+    ModificationPersonnelComponent
+    
     
   ],
   imports: [

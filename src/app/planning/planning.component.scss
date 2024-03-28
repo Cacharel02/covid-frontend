@@ -15,4 +15,52 @@
     text-align: center;
   }
 
+  table {
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.table-rounded {
+  border-radius: 50px; 
+  width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.rounded {
+  border-radius:  200px 200px 0 0 ;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   
+}
+
+.text-bouton {
+font-size: 16px;
+}
+
+.icon {
+  font-size: 29px;
+  font-weight: bold;
+  color: green;
+  size: 35px;
+}
+

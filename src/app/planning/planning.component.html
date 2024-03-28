@@ -13,7 +13,39 @@
     </div>
   </div>
 <table *ngIf="showTable">
-    <!-- Table content goes here -->
+    
   </table>
+
+  <div > sans bootstrap
+    <table class="table-rounded">
+        <thead>
+            <tr>
+                <th colspan="8">Titre 1</th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+              <td class="d-flex justify-content-between align-items-center">
+                <div>texte</div>
+                <div > <button class="rounded"    *ngIf="!isClicked" (click)="handleClick()">
+                  <span class="text-bouton">valider</span>
+                </button>
+                  <mat-icon class="icon"   *ngIf="isClicked">done-outline</mat-icon>
+              </div>
+              </td>
+              
+              
+            </tr>
+            <!-- Ajoutez d'autres lignes au besoin -->
+            <tr>   
+                
+            </tr>
+        </tbody>
+    </table> 
+    
+    
+</div>
 
 </div>

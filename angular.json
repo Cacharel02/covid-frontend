@@ -101,7 +101,9 @@
               "src/app/trouver-centre.component.scss",
               "src/app/rendez-vous.component.scss",
               "src/app/connexion.component.scss",
-              "src/app/centres.component.scss"
+              "src/app/centres.component.scss",
+              "src/app/planning.component.scss",
+              "src/app/modification-personnel.component.scss"
 
             ],
             "scripts": []
